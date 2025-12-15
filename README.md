@@ -42,16 +42,20 @@ graph TD;
 
 ```
 
-##🚀 Key Features* **📉 Hierarchical Decomposition:** Uses learnable Strided Convolutions to create multiscale representations (scales l=1..L), reducing effective sequence length geometrically.
-* **⚡ Shared Value Projection:** Decouples Query/Key projections while sharing Value projections across scales, significantly reducing parameter count.
-* **🧠 Optimization-Driven Aggregation:**
-* **`convex` strategy:** Solves a constrained L1-regularized optimization problem to weigh scales.
-* **`nash` strategy:** Simulates a non-cooperative game where scales compete to minimize reconstruction error (Best-Response Dynamics).
+## Key Features* 
+
+**Hierarchical Decomposition:** Uses learnable Strided Convolutions to create multiscale representations (scales l=1..L), reducing effective sequence length geometrically.
+**Shared Value Projection:** Decouples Query/Key projections while sharing Value projections across scales, significantly reducing parameter count.
+** Optimization-Driven Aggregation:**
+**`convex` strategy:** Solves a constrained L1-regularized optimization problem to weigh scales.
+**`nash` strategy:** Simulates a non-cooperative game where scales compete to minimize reconstruction error (Best-Response Dynamics).
 
 
-* **🏗️ Hybrid Design:** Integrates Dilated Convolutional blocks for local feature extraction prior to attention.
+**Hybrid Design:** Integrates Dilated Convolutional blocks for local feature extraction prior to attention.
 
-##📊 PerformanceMAHA demonstrates superior efficiency on long-sequence tasks (e.g., PG-19) compared to standard baselines.
+## Performance
+
+MAHA demonstrates superior efficiency on long-sequence tasks (e.g., PG-19) compared to standard baselines.
 
 | Model | Complexity | PG-19 (PPL) \downarrow | Memory Usage \downarrow |
 | --- | --- | --- | --- |
@@ -59,7 +63,8 @@ graph TD;
 | Longformer | O(N) | 23.8 | 9.1 GB |
 | **MAHA (Ours)** | **Sub-Quadratic** | **23.1** | **6.7 GB** |
 
-##🛠️ Installation```bash
+## Installation
+```bash
 # Clone the repository
 git clone [https://github.com/canererden/MAHA-Project.git](https://github.com/canererden/MAHA-Project.git)
 cd MAHA-Project
@@ -71,7 +76,10 @@ pip install -r requirements.txt
 
 *Note: For the Convex Optimization solver, `cvxpylayers` is required.*
 
-##💻 Usage###Quick StartYou can use `MAHABlock` as a drop-in replacement for standard attention layers or use the full `MAHATransformer` model.
+## Usage
+
+### Quick Start
+You can use `MAHABlock` as a drop-in replacement for standard attention layers or use the full `MAHATransformer` model.
 
 ```python
 import torch
@@ -99,7 +107,9 @@ print(f"Output Shape: {output.shape}")  # (1, 4096, 768)
 
 ```
 
-###Running ExperimentsTo replicate the training runs from the paper:
+### Running Experiments
+
+To replicate the training runs from the paper:
 
 ```bash
 # Train on synthetic data or configured dataset
@@ -110,7 +120,8 @@ python -m unittest discover tests/
 
 ```
 
-##📂 Directory Structure```text
+## Directory Structure
+```text
 maha-project/
 ├── configs/             # Hyperparameter configurations (YAML)
 ├── src/
@@ -124,7 +135,8 @@ maha-project/
 
 ```
 
-##📝 CitationIf you use this code or our results in your research, please cite our work using the persistent **Zenodo DOI**:
+## Citation
+If you use this code or our results in your research, please cite our work using the persistent **Zenodo DOI**:
 
 ```bibtex
 @software{maha_project_2025,
