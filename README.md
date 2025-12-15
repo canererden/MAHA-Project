@@ -15,13 +15,13 @@
 
 ---
 
-## 📖 Abstract
+## Abstract
 
 We propose **MAHA**, a novel attention mechanism that reformulates multi-head self-attention through **hierarchical multiscale decomposition** and mathematically rigorous aggregation (**Convex Optimization** & **Nash Equilibrium**).
 
 Standard attention mechanisms suffer from quadratic complexity $O(N^2)$. MAHA addresses this by dynamically partitioning the sequence into hierarchical scales and aggregating them using optimization solvers. The result is a framework that achieves **sub-quadratic complexity** and superior long-range dependency modeling compared to standard Transformers, specifically optimized for high-throughput inference.
 
-## 🏗️ Architecture
+## Architecture
 
 MAHA replaces the standard Multi-Head Attention layer with a hierarchical processing block.
 
@@ -42,7 +42,7 @@ graph TD;
 
 ```
 
-## Key Features* 
+## Key Features
 
 **Hierarchical Decomposition:** Uses learnable Strided Convolutions to create multiscale representations (scales l=1..L), reducing effective sequence length geometrically.
 **Shared Value Projection:** Decouples Query/Key projections while sharing Value projections across scales, significantly reducing parameter count.
@@ -135,7 +135,7 @@ maha-project/
 
 ```
 
-## Citation
+# Citation
 If you use this code or our results in your research, please cite our work using the persistent **Zenodo DOI**:
 
 ```bibtex
@@ -151,6 +151,5 @@ If you use this code or our results in your research, please cite our work using
 
 ```
 
-##📄 LicenseThis project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
-
-```
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
