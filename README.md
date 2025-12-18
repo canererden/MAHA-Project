@@ -5,11 +5,11 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-green)
 ![PyTorch](https://img.shields.io/badge/pytorch-2.0%2B-orange)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17936753.svg)](https://doi.org/10.5281/zenodo.17936753)
+[![arXiv](https://img.shields.io/badge/arXiv-2512.14925-b31b1b.svg)](https://arxiv.org/abs/2512.14925)
 
 **A Game-Theoretic and Optimization-Driven Approach to Efficient Contextual Modeling in Large Language Models**
 
-[**Read the Paper (Coming Soon)**](#) | [**Citation**](#-citation)
+[**Read the Paper**](https://arxiv.org/abs/2512.14925)
 
 </div>
 
@@ -139,14 +139,12 @@ maha-project/
 If you use this code or our results in your research, please cite our work using the persistent **Zenodo DOI**:
 
 ```bibtex
-@software{maha_project_2025,
-  author       = {Caner Erden},
-  title        = {MAHA: Official PyTorch Implementation of Multiscale Aggregated Hierarchical Attention},
-  year         = {2025},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.17936753},
-  url          = {[https://doi.org/10.5281/zenodo.17936753](https://doi.org/10.5281/zenodo.17936753)},
-  note         = {Code repository for the paper: "Multiscale Aggregated Hierarchical Attention (MAHA): A Game-Theoretic and Optimization-Driven Approach"}
+@article{erden2025maha,
+  title={Multiscale Aggregated Hierarchical Attention (MAHA): A Game Theoretic and Optimization Driven Approach to Efficient Contextual Modeling in Large Language Models},
+  author={Erden, Caner},
+  journal={arXiv preprint arXiv:2512.14925},
+  year={2025},
+  url={https://arxiv.org/abs/2512.14925}
 }
 
 ```
