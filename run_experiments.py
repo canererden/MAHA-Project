@@ -219,6 +219,7 @@ def plot_results(df_eff, loss_hist):
         plt.legend()
         plt.grid(True)
         plt.savefig("experiment_ablation.png", dpi=300)
+        plt.savefig("experiment_ablation.pdf")
         print("✅ Ablasyon Grafiği Kaydedildi: experiment_ablation.png")
 
 if __name__ == "__main__":

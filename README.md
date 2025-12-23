@@ -57,7 +57,7 @@ graph TD;
 
 MAHA demonstrates superior efficiency on long-sequence tasks (e.g., PG-19) compared to standard baselines.
 
-| Model | Complexity | PG-19 (PPL) \downarrow | Memory Usage \downarrow |
+| Model | Complexity | PG-19 (PPL) $\downarrow$ | Memory Usage $\downarrow$ |
 | --- | --- | --- | --- |
 | Standard Transformer | O(N^2) | 24.3 | 15.2 GB |
 | Longformer | O(N) | 23.8 | 9.1 GB |
